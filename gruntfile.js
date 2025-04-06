@@ -125,5 +125,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['watch']) // REGISTAR A TAREFA 'default' QUE É EXECUTADA QUANDO NÃO ESPECIFICAMOS O NOME DA TAREFA (TIPO ARRAY - VÁRIAS COISAS )
     // AMBIENTE DE PRODUÇÃO ↴↴ (INTERNET) 
-    grunt.registerTask('build', ['less:development', 'htmlmin:dist', 'replace:dev', 'clean', 'uglify'])
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dev', 'clean', 'uglify'])
 }
